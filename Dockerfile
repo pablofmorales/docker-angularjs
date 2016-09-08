@@ -33,7 +33,9 @@ RUN \
     rm -rf /var/lib/apt/lists/*
 
 
+RUN npm install -g gulp
 
-EXPOSE 8080
+EXPOSE 3000
 
-CMD npm install && npm run start
+
+CMD gulp
